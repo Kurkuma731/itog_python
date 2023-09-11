@@ -9,7 +9,7 @@ if not os.path.exists(notes_file):
         json.dump([], file)
 
 def add_note():
-    title = input("Введите заголовок текста")
+    title = input("Введите заголовок текста: ")
     body = input("Введите текст заметки: ")
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     with open(notes_file, "r") as file:
